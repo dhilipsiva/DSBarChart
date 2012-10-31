@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091364F21640F5E300655DD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091364F11640F5E300655DD9 /* UIKit.framework */; };
+		091364F41640F5E300655DD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091364F31640F5E300655DD9 /* Foundation.framework */; };
+		091364F61640F5E300655DD9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091364F51640F5E300655DD9 /* CoreGraphics.framework */; };
+		091364FC1640F5E300655DD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091364FA1640F5E300655DD9 /* InfoPlist.strings */; };
+		091364FE1640F5E300655DD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 091364FD1640F5E300655DD9 /* main.m */; };
+		091365021640F5E300655DD9 /* DSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 091365011640F5E300655DD9 /* DSAppDelegate.m */; };
+		091365041640F5E300655DD9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 091365031640F5E300655DD9 /* Default.png */; };
+		091365061640F5E300655DD9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 091365051640F5E300655DD9 /* Default@2x.png */; };
+		091365081640F5E300655DD9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 091365071640F5E300655DD9 /* Default-568h@2x.png */; };
+		0913650B1640F5E300655DD9 /* DSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0913650A1640F5E300655DD9 /* DSViewController.m */; };
+		0913650E1640F5E300655DD9 /* DSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0913650C1640F5E300655DD9 /* DSViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		091364ED1640F5E300655DD9 /* DSBarChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSBarChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		091364F11640F5E300655DD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		091364F31640F5E300655DD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		091364F51640F5E300655DD9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		091364F91640F5E300655DD9 /* DSBarChart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSBarChart-Info.plist"; sourceTree = "<group>"; };
+		091364FB1640F5E300655DD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		091364FD1640F5E300655DD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		091364FF1640F5E300655DD9 /* DSBarChart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSBarChart-Prefix.pch"; sourceTree = "<group>"; };
+		091365001640F5E300655DD9 /* DSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSAppDelegate.h; sourceTree = "<group>"; };
+		091365011640F5E300655DD9 /* DSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSAppDelegate.m; sourceTree = "<group>"; };
+		091365031640F5E300655DD9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		091365051640F5E300655DD9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		091365071640F5E300655DD9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		091365091640F5E300655DD9 /* DSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSViewController.h; sourceTree = "<group>"; };
+		0913650A1640F5E300655DD9 /* DSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSViewController.m; sourceTree = "<group>"; };
+		0913650D1640F5E300655DD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DSViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		091364EA1640F5E300655DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091364F21640F5E300655DD9 /* UIKit.framework in Frameworks */,
+				091364F41640F5E300655DD9 /* Foundation.framework in Frameworks */,
+				091364F61640F5E300655DD9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		091364E21640F5E300655DD9 = {
+			isa = PBXGroup;
+			children = (
+				091364F71640F5E300655DD9 /* DSBarChart */,
+				091364F01640F5E300655DD9 /* Frameworks */,
+				091364EE1640F5E300655DD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		091364EE1640F5E300655DD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				091364ED1640F5E300655DD9 /* DSBarChart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		091364F01640F5E300655DD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				091364F11640F5E300655DD9 /* UIKit.framework */,
+				091364F31640F5E300655DD9 /* Foundation.framework */,
+				091364F51640F5E300655DD9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		091364F71640F5E300655DD9 /* DSBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				091365001640F5E300655DD9 /* DSAppDelegate.h */,
+				091365011640F5E300655DD9 /* DSAppDelegate.m */,
+				091365091640F5E300655DD9 /* DSViewController.h */,
+				0913650A1640F5E300655DD9 /* DSViewController.m */,
+				0913650C1640F5E300655DD9 /* DSViewController.xib */,
+				091364F81640F5E300655DD9 /* Supporting Files */,
+			);
+			path = DSBarChart;
+			sourceTree = "<group>";
+		};
+		091364F81640F5E300655DD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				091364F91640F5E300655DD9 /* DSBarChart-Info.plist */,
+				091364FA1640F5E300655DD9 /* InfoPlist.strings */,
+				091364FD1640F5E300655DD9 /* main.m */,
+				091364FF1640F5E300655DD9 /* DSBarChart-Prefix.pch */,
+				091365031640F5E300655DD9 /* Default.png */,
+				091365051640F5E300655DD9 /* Default@2x.png */,
+				091365071640F5E300655DD9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		091364EC1640F5E300655DD9 /* DSBarChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 091365111640F5E300655DD9 /* Build configuration list for PBXNativeTarget "DSBarChart" */;
+			buildPhases = (
+				091364E91640F5E300655DD9 /* Sources */,
+				091364EA1640F5E300655DD9 /* Frameworks */,
+				091364EB1640F5E300655DD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSBarChart;
+			productName = DSBarChart;
+			productReference = 091364ED1640F5E300655DD9 /* DSBarChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		091364E41640F5E300655DD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DS;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Tataatsu IdeaLabs";
+			};
+			buildConfigurationList = 091364E71640F5E300655DD9 /* Build configuration list for PBXProject "DSBarChart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 091364E21640F5E300655DD9;
+			productRefGroup = 091364EE1640F5E300655DD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				091364EC1640F5E300655DD9 /* DSBarChart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		091364EB1640F5E300655DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091364FC1640F5E300655DD9 /* InfoPlist.strings in Resources */,
+				091365041640F5E300655DD9 /* Default.png in Resources */,
+				091365061640F5E300655DD9 /* Default@2x.png in Resources */,
+				091365081640F5E300655DD9 /* Default-568h@2x.png in Resources */,
+				0913650E1640F5E300655DD9 /* DSViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		091364E91640F5E300655DD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091364FE1640F5E300655DD9 /* main.m in Sources */,
+				091365021640F5E300655DD9 /* DSAppDelegate.m in Sources */,
+				0913650B1640F5E300655DD9 /* DSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		091364FA1640F5E300655DD9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				091364FB1640F5E300655DD9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0913650C1640F5E300655DD9 /* DSViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0913650D1640F5E300655DD9 /* en */,
+			);
+			name = DSViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0913650F1640F5E300655DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		091365101640F5E300655DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		091365121640F5E300655DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSBarChart/DSBarChart-Prefix.pch";
+				INFOPLIST_FILE = "DSBarChart/DSBarChart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		091365131640F5E300655DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSBarChart/DSBarChart-Prefix.pch";
+				INFOPLIST_FILE = "DSBarChart/DSBarChart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		091364E71640F5E300655DD9 /* Build configuration list for PBXProject "DSBarChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0913650F1640F5E300655DD9 /* Debug */,
+				091365101640F5E300655DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		091365111640F5E300655DD9 /* Build configuration list for PBXNativeTarget "DSBarChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				091365121640F5E300655DD9 /* Debug */,
+				091365131640F5E300655DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 091364E41640F5E300655DD9 /* Project object */;
+}
