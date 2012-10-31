@@ -18,6 +18,7 @@
 		091365081640F5E300655DD9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 091365071640F5E300655DD9 /* Default-568h@2x.png */; };
 		0913650B1640F5E300655DD9 /* DSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0913650A1640F5E300655DD9 /* DSViewController.m */; };
 		0913650E1640F5E300655DD9 /* DSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0913650C1640F5E300655DD9 /* DSViewController.xib */; };
+		0954FC481640F8190098A5C6 /* DSBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0954FC471640F8190098A5C6 /* DSBarChart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		091365091640F5E300655DD9 /* DSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSViewController.h; sourceTree = "<group>"; };
 		0913650A1640F5E300655DD9 /* DSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSViewController.m; sourceTree = "<group>"; };
 		0913650D1640F5E300655DD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DSViewController.xib; sourceTree = "<group>"; };
+		0954FC461640F8190098A5C6 /* DSBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSBarChart.h; sourceTree = "<group>"; };
+		0954FC471640F8190098A5C6 /* DSBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSBarChart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				0913650A1640F5E300655DD9 /* DSViewController.m */,
 				0913650C1640F5E300655DD9 /* DSViewController.xib */,
 				091364F81640F5E300655DD9 /* Supporting Files */,
+				0954FC461640F8190098A5C6 /* DSBarChart.h */,
+				0954FC471640F8190098A5C6 /* DSBarChart.m */,
 			);
 			path = DSBarChart;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				091364FE1640F5E300655DD9 /* main.m in Sources */,
 				091365021640F5E300655DD9 /* DSAppDelegate.m in Sources */,
 				0913650B1640F5E300655DD9 /* DSViewController.m in Sources */,
+				0954FC481640F8190098A5C6 /* DSBarChart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +299,7 @@
 				091365131640F5E300655DD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

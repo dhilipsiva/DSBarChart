@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DSViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *ChartView;
 
 @end
