@@ -12,7 +12,7 @@
 @synthesize color,numberOfBars, maxLen;
 
 -(DSBarChart *)initWithFrame:(CGRect)frame
-                       color:(CGColorRef)theColor
+                       color:(UIColor *)theColor
                andDictionary:(NSDictionary *)dictionary
 {
     self = [super initWithFrame:frame];
@@ -40,12 +40,14 @@
     float rectWidth = (float)(rect.size.width-(self.numberOfBars)) / (float)self.numberOfBars;
     int barCount = 0;
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, self.color);
-    for (NSString *key in [self.dict allKeys]) {
-        float iLen = [[self.dict valueForKey:key] floatValue];
-        float x = barCount * (1.0f + rectWidth);
+    CGContextSetFillColorWithColor(context, self.color.CGColor);
+    for (int i = 0; i < [self.dict count]; i++) {
+        float iLen = [[self.dict objectForKey:[NSString stringWithFormat:@"%d", i]] floatValue];
+        float x = barCount * (rectWidth);
         float height = iLen * rect.size.height / self.maxLen;
-        float y = rect.size.height - height;
+        float y;
+        if (height==0) height = 1;
+        y = rect.size.height - height;
         CGRect barRect = CGRectMake(barCount + x, y, rectWidth, height);
         CGContextFillRect(context, barRect);
         barCount+=1;

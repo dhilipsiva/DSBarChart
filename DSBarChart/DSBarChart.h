@@ -10,10 +10,10 @@
 
 @interface DSBarChart : UIView
 -(DSBarChart * )initWithFrame:(CGRect)frame
-                        color:(CGColorRef)color
+                        color:(UIColor*) color
                 andDictionary:(NSDictionary *)dictionary;
 @property (atomic) int numberOfBars;
 @property (atomic) float maxLen;
-@property (atomic) CGColorRef color;
+@property (atomic, strong) UIColor *color;
 @property (atomic) NSDictionary* dict;
 @end
