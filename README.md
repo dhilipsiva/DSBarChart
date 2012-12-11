@@ -6,7 +6,7 @@ DSBarChart
  alt="DSBarChart" title="A simple objective-c Bar Chart / Histogram library." align="canter"/>
  
  
- <script = "text/javascript">
+ <script>
  alert("Welcome");
  </script>
 
