@@ -29,8 +29,10 @@
                           [NSNumber numberWithInt:34], @"5",
                           [NSNumber numberWithInt:43], @"6",
                           nil];
+    NSArray *refs = [NSArray arrayWithObjects:@"M", @"Tu", @"W", @"Th", @"F", @"Sa", @"Su", nil];
     DSBarChart *chrt = [[DSBarChart alloc] initWithFrame:ChartView.bounds
                                                    color:[UIColor greenColor]
+                                              references:refs
                                            andDictionary:dict];
     chrt.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     chrt.bounds = ChartView.bounds;
