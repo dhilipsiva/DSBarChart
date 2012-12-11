@@ -1,6 +1,6 @@
 # DSBarChart
 
-A simple objective-c Bar Chart / Histogram library.
+A simple Objective-C Bar Chart / Histogram library.
 
 Latest Version: 0.2.0
 
