@@ -45,3 +45,22 @@ NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
 
 <img src="https://raw.github.com/dhilipsiva/DSBarChart/master/DSBarChart.png"
  alt="DSBarChart" title="A simple objective-c Bar Chart / Histogram library." align="canter"/>
+ 
+ 
+## Who is using DSBarChart
+
+1. [ReWire](http://www.rewireapp.com/)
+
+If you are using DSBarChart, please feel free to edit this list.
+
+## Credits
+
+1. [DhilipSiva](https://github.com/dhilipsiva)
+2. [Gautam Jeyaraman](https://github.com/gautamjeyaraman)
+
+## Final Note
+
+As like many other developers, I would be happy if you give me an attribution if you use this. Drop a mail. Or buy me something from my wishlist:
+
+1. [Amazon](http://www.amazon.com/registry/wishlist/2E251JJU12H5T)
+2. [Flipkart](http://www.flipkart.com/wishlist/dhilipsiva)
