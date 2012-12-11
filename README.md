@@ -2,11 +2,11 @@
 
 A simple objective-c Bar Chart / Histogram library.
 
-Latest Version: 0.2.0 [0.2.0]
+Latest Version: 0.2.0
 
-## installation
+## Installation
 
-### Manual Install:
+### Manual Install
 
 Simply click [here](https://github.com/dhilipsiva/DSBarChart/archive/master.zip) to download the file and add it into your project directory.
 
