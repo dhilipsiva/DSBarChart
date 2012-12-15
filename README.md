@@ -2,7 +2,7 @@
 
 A simple Objective-C Bar Chart / Histogram library.
 
-Latest Version: 0.2.0
+Latest Version: 0.3.0
 
 ## Installation
 
@@ -12,41 +12,40 @@ Simply click [here](https://github.com/dhilipsiva/DSBarChart/archive/master.zip)
 
 ### Using CocoaPods
 
-DSBarChart is also avilable on [CocoaPods](http://cocoapods.org/). To Install using CocoaPods, follow the instructions:
+DSBarChart is also avilable on [CocoaPods](http://cocoapods.org/?q=dhilipsiva). To Install using CocoaPods, follow the instructions:
 
 1. Open your Podfile
-2. Append `pod 'DSBarChart',  '~> 0.2.0'`
+2. Append `pod 'DSBarChart',  '~> 0.3.0'`
 3. Type `pod install` on terminal
 4. Open your `.xcworkspace` file.
 
 ## Sample Usage
 
 ```objective-c
-NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
-                          [NSNumber numberWithInt:30], @"0",
-                          [NSNumber numberWithInt:40], @"1",
-                          [NSNumber numberWithInt:20], @"2",
-                          [NSNumber numberWithInt:56], @"3",
-                          [NSNumber numberWithInt:70], @"4",
-                          [NSNumber numberWithInt:34], @"5",
-                          [NSNumber numberWithInt:43], @"6",
-                          nil];
-    NSArray *refs = [NSArray arrayWithObjects:@"M", @"Tu", @"W", @"Th", @"F", @"Sa", @"Su", nil];
-    DSBarChart *chrt = [[DSBarChart alloc] initWithFrame:ChartView.bounds
-                                                   color:[UIColor greenColor]
-                                              references:refs
-                                           andDictionary:dict];
-    chrt.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    chrt.bounds = ChartView.bounds;
-    [self.view addSubview:chrt];
+NSArray *vals = [NSArray arrayWithObjects:
+                 [NSNumber numberWithInt:30],
+                 [NSNumber numberWithInt:40],
+                 [NSNumber numberWithInt:20],
+                 [NSNumber numberWithInt:56],
+                 [NSNumber numberWithInt:70],
+                 [NSNumber numberWithInt:34],
+                 [NSNumber numberWithInt:43],
+                 nil];
+NSArray *refs = [NSArray arrayWithObjects:@"M", @"Tu", @"W", @"Th", @"F", @"Sa", @"Su", nil];
+DSBarChart *chrt = [[DSBarChart alloc] initWithFrame:ChartView.bounds
+                                               color:[UIColor greenColor]
+                                          references:refs
+                                           andValues:vals];
+chrt.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+chrt.bounds = ChartView.bounds;
+[ChartView addSubview:chrt];
 ```
 
 ## Output of the sample code above
 
 <img src="https://raw.github.com/dhilipsiva/DSBarChart/master/DSBarChart.png"
  alt="DSBarChart" title="A simple objective-c Bar Chart / Histogram library." align="canter"/>
- 
- 
+  
 ## Who is using DSBarChart
 
 1. [ReWire](http://www.rewireapp.com/)

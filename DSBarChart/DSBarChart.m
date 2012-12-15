@@ -9,26 +9,26 @@
 #import "DSBarChart.h"
 
 @implementation DSBarChart
-@synthesize color,numberOfBars, maxLen, refs;
+@synthesize color,numberOfBars, maxLen, refs, vals;
 
 -(DSBarChart *)initWithFrame:(CGRect)frame
                        color:(UIColor *)theColor
                   references:(NSArray *)references
-               andDictionary:(NSDictionary *)dictionary
+                   andValues:(NSArray *)values
 {
     self = [super initWithFrame:frame];
     if (self) {
         self.color = theColor;
-        self.dict = dictionary;
+        self.vals = values;
         self.refs = references;
     }
     return self;
 }
 
 -(void)calculate{
-    self.numberOfBars = [self.dict count];
-    for (NSString *key in [self.dict allKeys]) {
-        float iLen = [[self.dict valueForKey:key] floatValue];
+    self.numberOfBars = [self.vals count];
+    for (NSNumber *val in vals) {
+        float iLen = [val floatValue];
         if (iLen > self.maxLen) {
             self.maxLen = iLen;
         }
@@ -43,8 +43,8 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, self.color.CGColor);
     float LBL_HEIGHT = 20.0f;
-    for (int barCount = 0; barCount < [self.dict count]; barCount++) {
-        float iLen = [[self.dict objectForKey:[NSString stringWithFormat:@"%d", barCount]] floatValue];
+    for (int barCount = 0; barCount < self.numberOfBars; barCount++) {
+        float iLen = [[vals objectAtIndex:barCount] floatValue];
         float x = barCount * (rectWidth);
         float height = iLen * rect.size.height / self.maxLen;
         if (height==0.0f) height = 1.0f;
@@ -55,10 +55,10 @@
         if ((int)iLen != 0) {
             UILabel *valLbl = [[UILabel alloc] initWithFrame:CGRectMake(barCount + x, barRect.origin.y, rectWidth, LBL_HEIGHT)];
             valLbl.text = [NSString stringWithFormat:@"%d", (int)iLen];
-            valLbl.textColor = [UIColor redColor];
-            [valLbl setTextAlignment:NSTextAlignmentCenter];
             valLbl.adjustsFontSizeToFitWidth = TRUE;
             valLbl.adjustsLetterSpacingToFitWidth = TRUE;
+            valLbl.textColor = [UIColor redColor];
+            [valLbl setTextAlignment:NSTextAlignmentCenter];
             valLbl.backgroundColor = [UIColor clearColor];
             [self addSubview:valLbl];
         }
@@ -66,17 +66,17 @@
         //Reference Label.
         UILabel *lblRef = [[UILabel alloc] initWithFrame:CGRectMake(barCount + x, rect.size.height - LBL_HEIGHT, rectWidth, LBL_HEIGHT)];
         lblRef.text = [refs objectAtIndex:barCount];
-        lblRef.textColor = self.color;
-        [lblRef setTextAlignment:NSTextAlignmentCenter];
         lblRef.adjustsFontSizeToFitWidth = TRUE;
         lblRef.adjustsLetterSpacingToFitWidth = TRUE;
+        lblRef.textColor = self.color;
+        [lblRef setTextAlignment:NSTextAlignmentCenter];
         lblRef.backgroundColor = [UIColor clearColor];
         [self addSubview:lblRef];
         
         
         CGContextFillRect(context, barRect);
         
-        
+
     }
 }
 

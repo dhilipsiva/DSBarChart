@@ -20,20 +20,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
-                          [NSNumber numberWithInt:30], @"0",
-                          [NSNumber numberWithInt:40], @"1",
-                          [NSNumber numberWithInt:20], @"2",
-                          [NSNumber numberWithInt:56], @"3",
-                          [NSNumber numberWithInt:70], @"4",
-                          [NSNumber numberWithInt:34], @"5",
-                          [NSNumber numberWithInt:43], @"6",
-                          nil];
+    NSArray *vals = [NSArray arrayWithObjects:
+                    [NSNumber numberWithInt:30],
+                    [NSNumber numberWithInt:40],
+                    [NSNumber numberWithInt:20],
+                    [NSNumber numberWithInt:56],
+                    [NSNumber numberWithInt:70],
+                    [NSNumber numberWithInt:34],
+                    [NSNumber numberWithInt:43],
+                    nil];
     NSArray *refs = [NSArray arrayWithObjects:@"M", @"Tu", @"W", @"Th", @"F", @"Sa", @"Su", nil];
     DSBarChart *chrt = [[DSBarChart alloc] initWithFrame:ChartView.bounds
                                                    color:[UIColor greenColor]
                                               references:refs
-                                           andDictionary:dict];
+                                               andValues:vals];
     chrt.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     chrt.bounds = ChartView.bounds;
     [ChartView addSubview:chrt];

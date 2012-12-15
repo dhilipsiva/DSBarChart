@@ -12,10 +12,10 @@
 -(DSBarChart * )initWithFrame:(CGRect)frame
                         color:(UIColor*) color
                    references:(NSArray *)references
-                andDictionary:(NSDictionary *)dictionary;
+                    andValues:(NSArray *)values;
 @property (atomic) int numberOfBars;
 @property (atomic) float maxLen;
 @property (atomic, strong) UIColor *color;
-@property (atomic) NSDictionary* dict;
+@property (atomic) NSArray* vals;
 @property (atomic) NSArray* refs;
 @end
