@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>DSBarChart by dhilipsiva</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>DSBarChart</h1>
+        <p>A simple Objective-C Bar Chart / Histogram library.</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/dhilipsiva/DSBarChart" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/dhilipsiva/DSBarChart/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/dhilipsiva/DSBarChart/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>DSBarChart</h1>
+
+<p>A simple Objective-C Bar Chart / Histogram library.</p>
+
+<p>Latest Version: 0.3.0</p>
+
+<h2>Installation</h2>
+
+<h3>Manual Install</h3>
+
+<p>Simply click <a href="https://github.com/dhilipsiva/DSBarChart/archive/master.zip">here</a> to download the file and add it into your project directory.</p>
+
+<h3>Using CocoaPods</h3>
+
+<p>DSBarChart is also avilable on <a href="http://cocoapods.org/?q=dhilipsiva">CocoaPods</a>. To Install using CocoaPods, follow the instructions:</p>
+
+<ol>
+<li>Open your Podfile</li>
+<li>Append <code>pod 'DSBarChart',  '~&gt; 0.3.0'</code>
+</li>
+<li>Type <code>pod install</code> on terminal</li>
+<li>Open your <code>.xcworkspace</code> file.</li>
+</ol><h2>Sample Usage</h2>
+
+<div class="highlight"><pre><span class="n">NSArray</span> <span class="o">*</span><span class="n">vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSArray</span> <span class="nl">arrayWithObjects:</span>
+                 <span class="p">[</span><span class="n">NSNumber</span> <span class="nl">numberWithInt:</span><span class="mi">30</span><span class="p">],</span>
+                 <span class="p">[</span><span class="n">NSNumber</span> <span class="nl">numberWithInt:</span><span class="mi">40</span><span class="p">],</span>
+                 <span class="p">[</span><span class="n">NSNumber</span> <span class="nl">numberWithInt:</span><span class="mi">20</span><span class="p">],</span>
+                 <span class="p">[</span><span class="n">NSNumber</span> <span class="nl">numberWithInt:</span><span class="mi">56</span><span class="p">],</span>
+                 <span class="p">[</span><span class="n">NSNumber</span> <span class="nl">numberWithInt:</span><span class="mi">70</span><span class="p">],</span>
+                 <span class="p">[</span><span class="n">NSNumber</span> <span class="nl">numberWithInt:</span><span class="mi">34</span><span class="p">],</span>
+                 <span class="p">[</span><span class="n">NSNumber</span> <span class="nl">numberWithInt:</span><span class="mi">43</span><span class="p">],</span>
+                 <span class="nb">nil</span><span class="p">];</span>
+<span class="n">NSArray</span> <span class="o">*</span><span class="n">refs</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSArray</span> <span class="nl">arrayWithObjects:</span><span class="s">@"M"</span><span class="p">,</span> <span class="s">@"Tu"</span><span class="p">,</span> <span class="s">@"W"</span><span class="p">,</span> <span class="s">@"Th"</span><span class="p">,</span> <span class="s">@"F"</span><span class="p">,</span> <span class="s">@"Sa"</span><span class="p">,</span> <span class="s">@"Su"</span><span class="p">,</span> <span class="nb">nil</span><span class="p">];</span>
+<span class="n">DSBarChart</span> <span class="o">*</span><span class="n">chrt</span> <span class="o">=</span> <span class="p">[[</span><span class="n">DSBarChart</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithFrame:</span><span class="n">ChartView</span><span class="p">.</span><span class="n">bounds</span>
+                                               <span class="nl">color:</span><span class="p">[</span><span class="n">UIColor</span> <span class="n">greenColor</span><span class="p">]</span>
+                                          <span class="nl">references:</span><span class="n">refs</span>
+                                           <span class="nl">andValues:</span><span class="n">vals</span><span class="p">];</span>
+<span class="n">chrt</span><span class="p">.</span><span class="n">autoresizingMask</span> <span class="o">=</span> <span class="n">UIViewAutoresizingFlexibleWidth</span> <span class="o">|</span> <span class="n">UIViewAutoresizingFlexibleHeight</span><span class="p">;</span>
+<span class="n">chrt</span><span class="p">.</span><span class="n">bounds</span> <span class="o">=</span> <span class="n">ChartView</span><span class="p">.</span><span class="n">bounds</span><span class="p">;</span>
+<span class="p">[</span><span class="n">ChartView</span> <span class="nl">addSubview:</span><span class="n">chrt</span><span class="p">];</span>
+</pre></div>
+
+<h2>Output of the sample code above</h2>
+
+<p><img src="https://raw.github.com/dhilipsiva/DSBarChart/master/DSBarChart.png" alt="DSBarChart" title="A simple objective-c Bar Chart / Histogram library." align="canter"></p>
+
+<h2>Who is using DSBarChart</h2>
+
+<ol>
+<li><a href="http://www.rewireapp.com/">ReWire</a></li>
+</ol><p>If you are using DSBarChart, please feel free to edit this list.</p>
+
+<h2>Credits</h2>
+
+<ol>
+<li><a href="https://github.com/dhilipsiva">DhilipSiva</a></li>
+<li><a href="https://github.com/gautamjeyaraman">Gautam Jeyaraman</a></li>
+</ol><h2>Final Note</h2>
+
+<p>As like many other developers, I would be happy if you give me an attribution if you use this. Drop a mail. Or buy me something from my wishlist:</p>
+
+<ol>
+<li><a href="http://www.amazon.com/registry/wishlist/2E251JJU12H5T">Amazon</a></li>
+<li><a href="http://www.flipkart.com/wishlist/dhilipsiva">Flipkart</a></li>
+</ol>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/dhilipsiva">dhilipsiva</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
