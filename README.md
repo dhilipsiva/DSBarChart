@@ -1,16 +1,23 @@
-# DSBarChart
+```                                                                                   
+______  ___________            _____ _                _   
+|  _  \/  ___| ___ \          /  __ \ |              | |  
+| | | |\ `--.| |_/ / __ _ _ __| /  \/ |__   __ _ _ __| |_ 
+| | | | `--. \ ___ \/ _` | '__| |   | '_ \ / _` | '__| __|
+| |/ / /\__/ / |_/ / (_| | |  | \__/\ | | | (_| | |  | |_ 
+|___/  \____/\____/ \__,_|_|   \____/_| |_|\__,_|_|   \__|
+```
 
 A simple Objective-C Bar Chart / Histogram library.
 
 Latest Version: 0.3.0
 
-## Installation
+# Installation
 
-### Manual Install
+## Manual Install
 
 Simply click [here](https://github.com/dhilipsiva/DSBarChart/archive/master.zip) to download the file and add it into your project directory.
 
-### Using CocoaPods
+## Using CocoaPods
 
 DSBarChart is also avilable on [CocoaPods](http://cocoapods.org/?q=dhilipsiva). To Install using CocoaPods, follow the instructions:
 
@@ -19,7 +26,7 @@ DSBarChart is also avilable on [CocoaPods](http://cocoapods.org/?q=dhilipsiva). 
 3. Type `pod install` on terminal
 4. Open your `.xcworkspace` file.
 
-## Sample Usage
+# Sample Usage
 
 ```objective-c
 NSArray *vals = [NSArray arrayWithObjects:
@@ -41,7 +48,7 @@ chrt.bounds = ChartView.bounds;
 [ChartView addSubview:chrt];
 ```
 
-## Output of the sample code above
+# Output of the sample code above
 
 <img src="https://raw.github.com/dhilipsiva/DSBarChart/master/DSBarChart.png"
  alt="DSBarChart" title="A simple objective-c Bar Chart / Histogram library." align="canter"/>
@@ -52,12 +59,12 @@ chrt.bounds = ChartView.bounds;
 
 If you are using DSBarChart, please feel free to edit this list.
 
-## Credits
+# Credits
 
 1. [DhilipSiva](https://github.com/dhilipsiva)
 2. [Gautam Jeyaraman](https://github.com/gautamjeyaraman)
 
-## Final Note
+# Final Note
 
 As like many other developers, I would be happy if you give me an attribution if you use this. Drop a mail. Or buy me something from my wishlist:
 
