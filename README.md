@@ -13,11 +13,15 @@ Latest Version: 0.4.0
 
 # Installation
 
-## Manual Install
+## Install manually
 
 Simply click [here](https://github.com/dhilipsiva/DSBarChart/archive/master.zip) to download the file and add it into your project directory.
 
-## Using CocoaPods
+## Install using git
+
+1. Simply type `git clone git@github.com:dhilipsiva/DSBarChart.git` to clone this repo or `git submodule add git@github.com:dhilipsiva/DSBarChart.git` into your project folder.
+
+## Install using CocoaPods
 
 DSBarChart is also avilable on [CocoaPods](http://cocoapods.org/?q=dhilipsiva). To Install using CocoaPods, follow the instructions:
 
@@ -53,7 +57,7 @@ chrt.bounds = ChartView.bounds;
 <img src="https://raw.github.com/dhilipsiva/DSBarChart/master/DSBarChart.png"
  alt="DSBarChart" title="A simple objective-c Bar Chart / Histogram library." align="canter"/>
   
-## Who is using DSBarChart
+# Who is using DSBarChart
 
 1. [ReWire](http://www.rewireapp.com/)
 
