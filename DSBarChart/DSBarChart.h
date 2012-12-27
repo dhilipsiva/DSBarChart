@@ -10,7 +10,7 @@
 
 @interface DSBarChart : UIView
 -(DSBarChart * )initWithFrame:(CGRect)frame
-                        color:(UIColor*) color
+                        color:(UIColor*)theColor
                    references:(NSArray *)references
                     andValues:(NSArray *)values;
 @property (atomic) int numberOfBars;

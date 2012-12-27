@@ -15,7 +15,7 @@ Simply click [here](https://github.com/dhilipsiva/DSBarChart/archive/master.zip)
 DSBarChart is also avilable on [CocoaPods](http://cocoapods.org/?q=dhilipsiva). To Install using CocoaPods, follow the instructions:
 
 1. Open your Podfile
-2. Append `pod 'DSBarChart',  '~> 0.3.0'`
+2. Append `pod 'DSBarChart',  '~> 0.4.0'`
 3. Type `pod install` on terminal
 4. Open your `.xcworkspace` file.
 
@@ -56,6 +56,11 @@ If you are using DSBarChart, please feel free to edit this list.
 
 1. [DhilipSiva](https://github.com/dhilipsiva)
 2. [Gautam Jeyaraman](https://github.com/gautamjeyaraman)
+
+## Support
+
+* Email:     dhilipsiva[at]gmail.com
+* Groups:    [Google Groups](https://groups.google.com/forum/?fromgroups#!forum/dsbarchart)
 
 ## Final Note
 
