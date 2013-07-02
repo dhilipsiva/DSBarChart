@@ -69,15 +69,7 @@ If you are using DSBarChart, please feel free to edit this list.
 
 # Support
 
-* Email:     dhilipsiva[at]gmail.com
-* Groups:    [Google Groups](https://groups.google.com/forum/?fromgroups#!forum/dsbarchart)
-
-# Final Note
-
-As like many other developers, I would be happy if you give me an attribution if you use this. Drop a mail. Or buy me something from my wishlist:
-
-1. [Amazon](http://www.amazon.com/registry/wishlist/2E251JJU12H5T)
-2. [Flipkart](http://www.flipkart.com/wishlist/dhilipsiva)
+* Email:     dhilipsiva[AT]gmail[DOT]com
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dhilipsiva/dsbarchart/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
