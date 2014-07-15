@@ -11,6 +11,10 @@ A simple Objective-C Bar Chart / Histogram library.
 
 Latest Version: 0.4.0
 
+# Chat with me on gitter
+
+[![Gitter chat](https://badges.gitter.im/dhilipsiva/DSBarChart.png)](https://gitter.im/dhilipsiva/DSBarChart)
+
 # Installation
 
 ## Install manually
